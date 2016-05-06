@@ -2,9 +2,42 @@
 <html>
 <head>
 	<title></title>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+
+     $(function(){
+
+            var iFrames = $('iframe');
+
+            function iResize() {
+
+                for (var i = 0, j = iFrames.length; i < j; i++) {
+                  iFrames[i].style.height = iFrames[i].contentWindow.document.body.offsetHeight + 'px';}
+                }
+
+                if ($.browser.safari || $.browser.opera) { 
+
+                   iFrames.load(function(){
+                       setTimeout(iResize, 0);
+                   });
+
+                   for (var i = 0, j = iFrames.length; i < j; i++) {
+                        var iSource = iFrames[i].src;
+                        iFrames[i].src = '';
+                        iFrames[i].src = iSource;
+                   }
+
+                } else {
+                   iFrames.load(function() { 
+                       this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
+                   });
+                }
+
+            });
+</script>
 </head>
 <body>
 <a href="index.html">Return to SEG Surveys</a><hr>
-<iframe src="https://www.surveymonkey.com/r/YFZ697T" frameborder="0" allowfullscreen></iframe>
+<iframe  src="https://www.surveymonkey.com/r/YFZ697T"  class="iframe" frameborder="0"></iframe>
 </body>
 </html>
