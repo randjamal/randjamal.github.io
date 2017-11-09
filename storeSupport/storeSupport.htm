@@ -50,17 +50,30 @@ body {font-size:16px;}
     <h1 class="w3-xxxlarge w3-text-red"><b>What is Store Support?</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>Store Support contains the three outlets stores recieve information and assistance from.</p>
-    <p>Store Impact Planning ensures that all of our new initiatives are fit to land, ensuring activities can be executed properly. Store Communications provides timely, structured communication to keep the stores informed. Finally, the Store Help Desk provides the stores with a single point of contact when they have questions.
-    </p>
-    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/JYNDjYycNp4" frameborder="0" allowfullscreen></iframe></p>
+    <p>Store Impact Planning ensures that all of our new initiatives are fit to land, ensuring activities can be executed properly. Store Communications provides timely, structured communication to keep the stores informed. Finally, the Store Help Desk provides the stores with a single point of contact when they have questions.</p>
   </div>
-  
+
+  <!-- Video Modal -->
+  <div>
+  <button onclick="document.getElementById('vid').style.display='block'" class="w3-button w3-padding-large w3-black w3-container" style="width:100%">What is Central Operations? Video</button>
+  </div>
+
+  <div id="vid" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+      <header class="w3-container w3-red"><h3>What is Central Operations?</h3></header>
+      <div class="w3-container">
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/JYNDjYycNp4" frameborder="0" allowfullscreen></iframe></p>
+      </div>
+      <footer class="w3-container w3-padding w3-red">&nbsp;</footer><span onclick="document.getElementById('vid').style.display='none'" class="w3-container w3-padding w3-button w3-red w3-display-bottomright">Close</span>
+    </div>
+  </div>  
+
   <!-- SIP -->
   <div class="w3-container" id="sip" style="margin-top:15px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Store Impact Planning</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <div class="w3-right w3-padding">
-      <img src="https://i.imgur.com/f7jnQuf.jpg" style="width:150px;height: 150px">
+    <div class="w3-right">
+      <img src="https://i.imgur.com/f7jnQuf.jpg" style="width:150px;height: 150px;margin-bottom: 30px">
     </div>
     <div>
     <ul>
@@ -72,45 +85,41 @@ body {font-size:16px;}
     </div>
   </div>
 
-  <!-- SIP Tools -->
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m6 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <div class="w3-container">
-          <h3>Checklist</h3>
-          <p class="w3-opacity"><a href="Checklist.pdf" target="blank">Click here for the checklist</a></p>
-          <p>The checklist should be completed prior to any major initiative launching.</p>
-        </div>
+  <!-- SIP Tools Modals -->
+  <div class="w3-bar">
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-padding-large w3-black w3-container" style="width:49%">Checklist</button>
+  <button onclick="document.getElementById('calendar').style.display='block'" class="w3-button w3-padding-large w3-black w3-right w3-container" style="width:49%">Restricted Time Periods</button>
+  <div class="w3-padding-large w3-rest w3-container">&nbsp;</div>
+  </div>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+      <header class="w3-container w3-red"><h3>Checklist</h3></header>
+      <div class="w3-container">
+      <p>The checklist should be completed prior to any major initiative launching.</p>
+      <p class="w3-opacity"><a href="Checklist.pdf" target="blank">Click here for the checklist</a></p>
       </div>
+      <footer class="w3-container w3-padding w3-red">&nbsp;</footer><span onclick="document.getElementById('id01').style.display='none'" class="w3-container w3-padding w3-button w3-red w3-display-bottomright">Close</span>
     </div>
-    <!--
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <div class="w3-container">
-          <h3>Timing</h3>
-          <p class="w3-opacity">Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        </div>
+  </div>
+
+    <div id="calendar" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+      <header class="w3-container w3-red"><h3>Restricted Time Periods</h3></header>
+      <div class="w3-container">
+      <p>The Restricted Time Calendar displays the times when new activity and communication will be limited.</p>
+      <p class="w3-opacity"><a href="Calendar.pdf" target="blank">Restricted Time Periods</a></p>
       </div>
-    </div>
-  -->
-    <div class="w3-col m6 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <div class="w3-container">
-          <h3>Restricted Time Periods</h3>
-          <p class="w3-opacity"><a href="Calendar.pdf" target="blank">Click here for the Restricted Time Calendar</a></p>
-          <p>The Restricted Time Calendar displays the times when new activity and communication will be limited.</p>
-        </div>
-      </div>
+      <footer class="w3-container w3-padding w3-red">&nbsp;</footer><span onclick="document.getElementById('calendar').style.display='none'" class="w3-container w3-padding w3-button w3-red w3-display-bottomright">Close</span>
     </div>
   </div>
 
   <!-- Store Comms -->
-  <div class="w3-container" id="comms" style="margin-top:15px">
+  <div class="w3-container" id="comms">
     <h1 class="w3-xxxlarge w3-text-red"><b>Store Comms</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <div class="w3-right w3-padding">
-      <img src="https://i.imgur.com/Y1WRcJP.jpg" style="width:150px;height: 150px">
+    <div class="w3-right">
+      <img src="https://i.imgur.com/Y1WRcJP.jpg" style="width:150px;height: 150px;margin-bottom: 30px">
     </div>
     <ul>
       <li>One trusted voice for stores
@@ -120,47 +129,52 @@ body {font-size:16px;}
     </ul>
   </div>
 
-  <!-- comms tools -->
-    <div class="w3-row-padding w3-grayscale">
+    <!-- Store Comms Modals -->
+  <div class="w3-bar">
+  <button onclick="document.getElementById('deadlines').style.display='block'" class="w3-button w3-padding-large w3-black w3-container" style="width: 33%">Deadlines</button>
+  <button onclick="document.getElementById('product').style.display='block'" class="w3-button w3-padding-large w3-black w3-container" style="width: 33%">Product Update Form</button>
+  <button onclick="document.getElementById('dept').style.display='block'" class="w3-button w3-padding-large w3-black w3-container" style="width: 33%">Dept Planner Template</button>
+  </div>
 
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <div class="w3-container">
-          <h3>Deadlines</h3>
+  <div id="deadlines" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+      <header class="w3-container w3-red"><h3>Deadlines</h3></header>
+      <div class="w3-container">
           <p>Daily Updates (unplanned priority communications): Must be submitted to your Merch Ops partner by 2:30 pm the day prior (Friday by 2:30 pm for Monday).</p>
-          <p>Department Planner (planned communications): Should be submitted to your Merch Ops partner Wednesday by 2 pm, 14 days prior to the ad break the communication pertains to.
-        </div>
+          <p>Department Planner (planned communications): Should be submitted to your Merch Ops partner Wednesday by 2 pm, 14 days prior to the ad break the communication pertains to.</p>
       </div>
+      <footer class="w3-container w3-padding w3-red">&nbsp;</footer><span onclick="document.getElementById('deadlines').style.display='none'" class="w3-container w3-padding w3-button w3-red w3-display-bottomright">Close</span>
     </div>
+  </div>
 
-      <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <div class="w3-container">
-          <h3>Product Update Form</h3>
+    <div id="product" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+      <header class="w3-container w3-red"><h3>Product Update Form</h3></header>
+      <div class="w3-container">
+          <p>Communication needs that occur during the normal course of business can be submitted via the Product Update Form.</p><p> This and other communication needs should flow through your assigned member of the Merchandising Operations team. If you don't have a Merch Ops member assigned, or don't know who you should contact, please email <a href="mailto:StoreCommunications@segrocers.com" class="w3-opacity">Store Communications</a></p>
           <p class="w3-opacity"><a href="Update.docx" target="blank">Click here for the Product Update Form</a></p>
-          <p>Communication needs that occur during the normal course of business can be submitted via the Product Update Form.</p><p> This and other communication needs should flow through your assigned member of the Merchandising Operations team. If you don't have a Merch Ops member assigned, or don't know who you should contact, please email <a href="mailto:StoreCommunications@segrocers.com">StoreCommunications@segrocers.com</a></p>
-        </div>
       </div>
+      <footer class="w3-container w3-padding w3-red">&nbsp;</footer><span onclick="document.getElementById('product').style.display='none'" class="w3-container w3-padding w3-button w3-red w3-display-bottomright">Close</span>
     </div>
+  </div>
 
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <div class="w3-container">
-          <h3>Dept Planner Template</h3>
-          <p class="w3-opacity"><a href="Calendar.pdf" target="blank">Click here for the Dept Planner Template</a></p>
+      <div id="dept" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+      <header class="w3-container w3-red"><h3>Dept Planner Template</h3></header>
+      <div class="w3-container">
           <p>The Dept Planner Template is an example of the content and layout for content that will be included in the weekly department planner.</p>
-        </div>
+          <p class="w3-opacity"><a href="Calendar.pdf" target="blank">Click here for the Dept Planner Template</a></p>
       </div>
+      <footer class="w3-container w3-padding w3-red">&nbsp;</footer><span onclick="document.getElementById('dept').style.display='none'" class="w3-container w3-padding w3-button w3-red w3-display-bottomright">Close</span>
     </div>
-
   </div>
 
 <!-- SHD -->
-  <div class="w3-container" id="shd" style="margin-top:15px">
+  <div class="w3-container" id="shd" style="margin-top: 30px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Store Help Desk</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <div class="w3-right w3-padding">
-      <img src="https://i.imgur.com/fHpfuLH.jpg" style="width:150px;height: 150px">
+    <div class="w3-right">
+      <img src="https://i.imgur.com/fHpfuLH.jpg" style="width:150px;height: 150px;margin-bottom: 30px">
     </div>
     <ul>
       <li>One point of contact for stores</li>
@@ -170,16 +184,19 @@ body {font-size:16px;}
     </ul>
   </div>
 
-  <!-- SHD Tools -->
-    <div class="w3-row-padding w3-grayscale">
-      <div class="w3-col w3-margin-bottom">
-      <div class="w3-light-grey">
-        <div class="w3-container">
-          <h3>Intake Form</h3>
-          <p class="w3-opacity"><a href="http://www.google.com" target="blank">Click here for the SHD Intake Form</a></p>
+<!-- SHD Modals -->
+  <div class="w3-bar">
+  <button onclick="document.getElementById('intake').style.display='block'" class="w3-button w3-padding-large w3-black w3-container" style="width: 100%">Intake Form</button>
+  </div>
+
+  <div id="intake" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+      <header class="w3-container w3-red"><h3>Intake Form</h3></header>
+      <div class="w3-container">
           <p>If you have a email box that the stores have been directed to email it should be scheduled for handoff to the SHD. Please complete the intake form to initiate this process.</p>
-        </div>
+          <p class="w3-opacity"><a href="http://www.google.com" target="blank">Click here for the SHD Intake Form</a></p>
       </div>
+      <footer class="w3-container w3-padding w3-red">&nbsp;</footer><span onclick="document.getElementById('intake').style.display='none'" class="w3-container w3-padding w3-button w3-red w3-display-bottomright">Close</span>
     </div>
   </div>
 
@@ -187,7 +204,7 @@ body {font-size:16px;}
 </div>
 
 <!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-16" style="margin-top:35px;padding-right:58px"><p class="w3-right">If you have any questions please contact <a href="mailto:StoreImpactPlanning@segrocers.com">StoreImpactPlanning@segrocers.com</a></p></div>
+<div class="w3-light-grey w3-container w3-padding-16" style="margin-top:15px;padding-right:58px"><p class="w3-right">If you have any questions please contact <a href="mailto:StoreImpactPlanning@segrocers.com">StoreImpactPlanning@segrocers.com</a></p></div>
 
 <script>
 // Script to open and close sidebar
@@ -199,14 +216,6 @@ function w3_open() {
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
 }
 </script>
 
