@@ -130,9 +130,10 @@ body {font-size:16px;}
 
     <!-- Store Comms Modals -->
   <div class="w3-bar w3-opacity">
-  <button onclick="document.getElementById('deadlines').style.display='block'" class="w3-button w3-padding-large w3-black w3-container w3-col s12 m12 l4">Deadlines</button>
-  <button onclick="document.getElementById('product').style.display='block'" class="w3-button w3-padding-large w3-black w3-container w3-col s12 m12 l4">Product Update Form</button>
-  <button onclick="document.getElementById('dept').style.display='block'" class="w3-button w3-padding-large w3-black w3-container w3-col s12 m12 l4">Dept Planner Template</button>
+  <button onclick="document.getElementById('deadlines').style.display='block'" class="w3-button w3-padding-large w3-black w3-container w3-col s12 m12 l3">Deadlines</button>
+  <button onclick="document.getElementById('product').style.display='block'" class="w3-button w3-padding-large w3-black w3-container w3-col s12 m12 l3">Product Update</button>
+  <button onclick="document.getElementById('dept').style.display='block'" class="w3-button w3-padding-large w3-black w3-container w3-col s12 m12 l3">Dept Planner</button>
+  <button onclick="document.getElementById('recalls').style.display='block'" class="w3-button w3-padding-large w3-black w3-container w3-col s12 m12 l3">Recalls</button>
   </div>
 
   <div id="deadlines" class="w3-modal">
@@ -146,7 +147,7 @@ body {font-size:16px;}
     </div>
   </div>
 
-    <div id="product" class="w3-modal">
+  <div id="product" class="w3-modal">
     <div class="w3-modal-content w3-card-4 w3-animate-zoom">
       <header class="w3-container w3-red"><h3>Product Update Form</h3></header>
       <div class="w3-container">
@@ -157,7 +158,7 @@ body {font-size:16px;}
     </div>
   </div>
 
-      <div id="dept" class="w3-modal">
+  <div id="dept" class="w3-modal">
     <div class="w3-modal-content w3-card-4 w3-animate-zoom">
       <header class="w3-container w3-red"><h3>Dept Planner Template</h3></header>
       <div class="w3-container">
@@ -165,6 +166,17 @@ body {font-size:16px;}
           <p class="w3-opacity"><a href="ExampleDept.docx" target="blank">Click here for the Dept Planner Template</a></p>
       </div>
       <footer class="w3-container w3-padding w3-red">&nbsp;</footer><span onclick="document.getElementById('dept').style.display='none'" class="w3-container w3-padding w3-button w3-red w3-display-bottomright">Close</span>
+    </div>
+  </div>
+
+  <div id="recalls" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+      <header class="w3-container w3-red"><h3>Product Recalls/Withdrawals</h3></header>
+      <div class="w3-container">
+          <p>To initiate a product recall or withdrawal, a member of the merchandising team must complete the Product Recall Information Form and submit to <a href="mailto:productrecallteam@segrocers.com" class="w3-opacity">Product Recall Team</a></p>
+          <p class="w3-opacity"><a href="Recall.docx" target="blank">Click here for the Product Recall Information Form</a></p>
+      </div>
+      <footer class="w3-container w3-padding w3-red">&nbsp;</footer><span onclick="document.getElementById('recalls').style.display='none'" class="w3-container w3-padding w3-button w3-red w3-display-bottomright">Close</span>
     </div>
   </div>
 
